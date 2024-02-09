@@ -92,31 +92,26 @@
         type: 'iframe'
     });
 
-    /*------------------
-        CountDown
-    --------------------*/
-    // For demo preview
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
+/*------------------
+    CountDown
+--------------------*/
+// For demo preview
+var today = new Date();
+var targetDate = new Date(today.getTime() + (14 * 24 * 60 * 60 * 1000) + (2 * 60 * 60 * 1000)); // 14 days and 2 hours from now
 
-    if(mm == 12) {
-        mm = '01';
-        yyyy = yyyy + 1;
-    } else {
-        mm = parseInt(mm) + 1;
-        mm = String(mm).padStart(2, '0');
-    }
-    var timerdate = mm + '/' + dd + '/' + yyyy;
-    // For demo preview end
-    
+var dd = String(targetDate.getDate()).padStart(2, '0');
+var mm = String(targetDate.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = targetDate.getFullYear();
 
-    // Use this for real timer date
-    /*  var timerdate = "2020/01/01"; */
+var timerdate = mm + '/' + dd + '/' + yyyy;
+// For demo preview end
 
-	$("#countdown").countdown(timerdate, function(event) {
-        $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
-    });
+// Use this for real timer date
+/*  var timerdate = "2020/01/01"; */
+
+$("#countdown").countdown(timerdate, function(event) {
+    $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
+});
+
 
 })(jQuery);
