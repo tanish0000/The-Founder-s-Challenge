@@ -1144,7 +1144,11 @@ ol {
 	vertical-align: middle;
 	height: 41px;
 }
+.footer-logo{
+		width: 20%;
 
+
+}
 .footer-text {
 	text-align: center;
 	padding-top: 60px;
