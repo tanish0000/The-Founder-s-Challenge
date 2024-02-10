@@ -1,338 +1,366 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Manup Template">
-    <meta name="keywords" content="Manup, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The founder's challenge</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
-
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Founders challange</title>
+  <link rel="icon" href="/images/logo.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+  html {
+    scroll-behavior: smooth;
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #80F7D1;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 100;
+  }
+
+  /*.loading-wrapper{*/
+  /*  background-color: #ffffff;*/
+  /*  color:#FFFFFF;*/
+  /*}*/
+  .back-top-wrap:hover {
+    background-color: black;
+    color: #FFFFFF;
+  }
+
+  .back-top-wrap:hover .fas.fa-arrow-up {
+    color: white;
+  }
+
+  .fas.fa-arrow-up {
+    color: #00488F;
+    transition: 0.3s ease-in-out;
+  }
+
+  .footerlogo {
+      width: 50px; /* Adjust the logo size */
+    }
+
+</style>
+
+<body onload="myFunction()">
+  <div class="loading-wrapper" >
+   <div class="col">
+        <div class="footercontent">
+          <img src="/images/logo.png" alt="Anurag GPT Logo" class="footerlogo" />
+<!--          <h2 class="footerheading" style="color: white">ANURAG GPT</h2>-->
+<!--          <p class="footerpara" style="color: white">Unleashing Tomorrow's Potential</p>-->
+        </div>
+      </div>
+  </div>
+
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <header>
+    <nav class="nav" id="nav">
+      <div class="col">
+        <img src="/images/logo.png" alt="Anurag GPT Logo" class="footerlogo" />
+      </div>
+     <div class="col" >
+        <div class="footercontent">
+<!--          <h2 class="footerheading" style="color: white;">ANURAG GPT</h2>-->
+<!--          <p class="footerpara" style="color: white;">Unleashing Tomorrow's Potential</p>-->
+        </div>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">The Founders Challange</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#Tickets">Tickets </a></li>
+          
+        </ul>
+      </div>
+<!--      <button class="login-button"><a href="html/login.html">Predect</a></button>-->
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#Tickets">Tickets </a></li>
+       
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome to The founders Challange</h1>
+      <div class="container">
+        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["RevolutioniWhere ideas ignite and dreams take shape, at The Founder's Challenge, where funding, networking, and mentorship await! 🌟🚀"],
+          typeSpeed: 50,
+          backspeed: 50,
+          loop: true
+        })
+      </script>
+      <a href="#Tickets" class="rainbow-button" alt="Get Tickets"></a>
     </div>
 
-    <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="container">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="img/logoo.png" alt="">
-                </a>
-            </div>
-            <div class="nav-menu">
-                <nav class="mainmenu mobile-menu">
-                    <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="./speaker.html">Panelist</a></li>
-                        <li><a href="./contact.html">Contacts</a></li>
-                    </ul>
-                </nav>
-                <a href="https://lu.ma/Thefounderschallange" class="primary-btn top-btn"><i class="fa fa-ticket"></i> Ticket</a>
-            </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
-    </header>
-    <!-- Header End -->
+  </header>
 
-    <!-- Hero Section Begin -->
-    <section class="hero-section set-bg" data-setbg="img/hero.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="hero-text">
-                        <span>23 Feb 2024, Anurag University, Hyderabad</span>
-                        <h2>Think big, pitch bold. <br /> The Founder's Challenge</h2>
-                        <a href="https://lu.ma/Thefounderschallange" class="primary-btn">Buy Ticket</a>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <img src="img/hero-right.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1 data-aos="flip-right">What is The Founders challange</h1>
+    <div class="max-width">
+      <div data-aos="zoom-in" class="photo"><img src="https://assets.gadgets360cdn.com/pricee/assets/product/202212/Shark-Tank-India_1671195696.jpg?downsize=220:308" alt="" height="500px" width="300px"></div>
+      <div class="about-content">
+        <p data-aos="fade-left" class="text-1">Hyderabad's one of of the biggest- <span>Pitching challange for student Entrepreneurs</span>.</p>
+        <!-- <h1 data-aos="flip-right">OUR MISSION</h1> -->
+        <p data-aos="fade-left" class="text-3">Having a business idea but waiting for opportunities like Shark Tank? Well, The Founders Challenge is here.
+           Come pitch your ideas to a panel of CEOs and VCs, impress them, and get your initial funding and mentorship. Even if you don't have an idea, you are still welcome.
+            You can connect with like-minded people across various domains and find your next co-founder, investor, or tech team.</p>
+      </div>
+    </div>
 
-    <!-- Counter Section Begin -->
-    <section class="counter-section bg-gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="counter-text">
-                        <span>Conference Date</span>
-                        <h3>Count Every Second <br />Until the Event</h3>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="cd-timer" id="countdown">
-                        <div class="cd-item">
-                            <span>14</span>
-                            <p>Days</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>2</span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>0</span>
-                            <p>Minutes</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>0</span>
-                            <p>Seconds</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
 
-    <!-- Home About Section Begin -->
-    <section class="home-about-section spad" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="ha-pic" style="margin-top: 180px;">
-                        <img src="img/h-about.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ha-text">
-                        <h2>About</h2>
-                        <p>
-                            Got a million-dollar idea but feeling more like a fish out of water, waiting for your big break like you're on Shark Tank? Hey, we've all been there! But fear not, because The Founders Challenge is your ticket to startup stardom!Picture this: you strut your stuff in front of a panel of big-shot CEOs and venture capitalists. You dazzle them with your brilliance, and voila! They're throwing money at you and offering to be your fairy godmother or godfather of business. It's like magic, but with a lot more paperwork.Now, maybe you haven't quite cooked up your million $ idea  yet. No worries! We're all about inclusivity here. Come join our gang of dreamers, thinkers, and wannabe world-changers. Rub elbows with folks from all walks of life, and who knows? You might just stumble upon your next partner-in-crime, investor, or coding wizard.
-                            At The Founders Challenge, we're all about turning wild ideas into wild success stories. So buckle up, buttercup! It's gonna be a bumpy, exhilarating ride filled with laughter, learning, and the occasional existential crisis. But hey, that's just part of the startup charm, right? Let's make some entrepreneurial magic happen together! 🚀✨
-                           </p>
-                        <ul>
-                            <li><span class="icon_check"></span> Win initial funding and mentorship: Secure resources to launch your dream venture.</li>
-                            <li><span class="icon_check"></span> Two-stage competition: Submit your pitch deck, then present live to the panel if shortlisted.</li>
-                            <li><span class="icon_check"></span> Networking: Find like minded people</li>
-                        </ul>
-                        <p> Don't miss this chance to turn your idea into reality!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Home About Section End -->
+<!-- SERVICES SECTION -->
 
-    <!-- Team Member Section Begin -->
-    <section class="team-member-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Who’s speaking</h2>
-                        <p>These are our communicators, you can see each person information</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="member-item set-bg" data-setbg="img/team-member/anuragpalla.jpeg">
-            <div class="mi-social">
-                <div class="mi-social-inner bg-gradient">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/anurag-palla/"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="mi-text">
-                <h5>Anurag Palla</h5>
-                <span>Director of Strategy and Digital Learning, Anurag University</span>
-            </div>
-        </div>
-        <div class="member-item set-bg" data-setbg="img/team-member/Screenshot_2024-02-10_at_8.09.32_PM-removebg-preview.png">
-            <div class="mi-social">
-                <div class="mi-social-inner bg-gradient">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/dr-balaji-utla-phd-461b8a1b/"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="mi-text">
-                <h5>Dr Balaji Utla</h5>
-                <span>Registrar Anurag University</span>
-            </div>
-        </div>
-        <div class="member-item set-bg" data-setbg="img/team-member/img1.png">
-            <div class="mi-social">
-                <div class="mi-social-inner bg-gradient">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/yellapragada-venkat-740a90b4/"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="mi-text">
-                <h5>Yellapragada Venkat</h5>
-                <span>Ceo Campx</span>
-            </div>
-        </div>
-        <div class="member-item set-bg" data-setbg="img/team-member/vendor_c53015e875a2e796bc25ca874a294d03.jpg">
-            <div class="mi-social">
-                <div class="mi-social-inner bg-gradient">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/ashishpati/"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="mi-text">
-                <h5>Ashish Pati</h5>
-                <span>Healthcare industry expertise</span>
-            </div>
-        </div>
-        <div class="member-item set-bg" data-setbg=" img/team-member/hyderabadstories.jpeg">
-            <div class="mi-social">
-                <div class="mi-social-inner bg-gradient">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/vipul-talari/"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="mi-text">
-                <h5>Vipul Talari</h5>
-                <span>Executive Director Infinity Reach</span>
-            </div>
-        </div>
+<section>
 
-    </section>
-    <!-- Team Member Section End -->
+    <h3><span id:"Meet" style="color: ghostwhite">MEET OUR PANEL </span></h3>
 
-    
-    
-    <!-- Contact Section Begin -->
-    <section class="contact-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title">
-                        <h2>Location</h2>
-                        <p>Get directions to our event center</p>
-                    </div>
-                    <div class="cs-text">
-                        <div class="ct-address">
-                            <span>Address:</span>
-                            <p>Venkatapur, Ghatkesar Rd, <br /> Hyderabad, Telangana 500088</p>
-                        </div>
-                        <ul>
-                            <li>
-                                <span>Phone:</span>
-                                +91 99082 93531                            </li>
-                            <li>
-                                <span>Email:</span>
-                                enigmaclub@anurag.edu.in
-                            </li>
-                        </ul>
+    <div class="box">
 
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="cs-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.827222318119!2d78.6560408!3d17.4200774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76730bf4dccf%3A0x2ca84b53416f0abd!2sAnurag%20University%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1707494166390!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="https://anurag.edu.in/wp-content/uploads/2023/03/anurag-palla.jpg" alt="PRADEEP" loading="lazy">
+        <h5>Anurag Palla</h5>
+        <div class="pra">
+          <p>Director of Strategy and Digital Learning, Anurag University and a investor</p>
+          <a href="https://www.linkedin.com/in/anurag-palla/"><button> Connect</button></a>
         </div>
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Section Begin -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="partner-logo owl-carousel">
-                <a href="#" class="pl-table">
-                    <div class="pl-tablecell">
-                        <img src="img/partner-logo/logo-1.png" alt="">
-                    </div>
-                </a>
-                <a href="#" class="pl-table">
-                    <div class="pl-tablecell">
-                        <img src="img/partner-logo/logo-2.png" alt="">
-                    </div>
-                </a>
-                <a href="#" class="pl-table">
-                    <div class="pl-tablecell">
-                        <img src="img/partner-logo/logo-3.png" alt="">
-                    </div>
-                </a>
-                <a href="#" class="pl-table">
-                    <div class="pl-tablecell">
-                        <img src="img/partner-logo/logo-4.png" alt="">
-                    </div>
-                </a>
-                <a href="#" class="pl-table">
-                    <div class="pl-tablecell">
-                        <img src="img/partner-logo/logo-5.png" alt="">
-                    </div>
-                </a>
-                <a href="#" class="pl-table">
-                    <div class="pl-tablecell">
-                        <img src="img/partner-logo/logo-6.png" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-text">
-                        <div class="ft-logo">
-                            <a href="#" class="footer-logo"><img src="img/logoo-f.png" alt=""></a>
-                        </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Panelist</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <div class="copyright-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
-                        <div class="ft-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="https://www.siliconindia.com/images/simag_images/uploaded_images/company_logos/4s8xc.Balaji-Utla-Im.jpg" alt="PRADEEP" loading="lazy">
+        <h5>DR Balaji Utla</h5>
+        <div class="pra">
+          <p>EX-CEO of Satyam Foundation , Registrar Anurag University</p>
+          <a href="https://www.linkedin.com/in/dr-balaji-utla-phd-461b8a1b/"><button>Connect</button></a>
         </div>
-    </footer>
-    <!-- Footer Section End -->
+      </div>
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="https://cdn.theorg.com/fbd95688-33dd-4f6c-b8e8-6e307404f1c0_thumb.jpg" alt="" loading="lazy">
+        <h5>Yellapragada Venkat</h5>
+        <div class="pra">
+          <p>Founder and CEO of CampX</p>
+         
+          <a href="https://www.linkedin.com/in/yellapragada-venkat-740a90b4/"><button>Connect</button></a>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="https://worldartcommunity.com/images/vendor-images/vendor_c53015e875a2e796bc25ca874a294d03.jpg" alt="" loading="lazy">
+        <h5>Ashish Pati</h5>
+        <div class="pra">
+          <p>Investor</p>
+          <a href="https://www.linkedin.com/in/ashishpati/"><button>Connect</button></a>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="https://www.infinityreach.com/wp-content/uploads/profile-pic-8.png" alt="" loading="lazy">
+        <h5>Vipul Talari</h5>
+        <div class="pra">
+          <p>Founder and CEO of Infinityreach and Hyderabad Stories and a Investor</p>
+          <a href="https://www.linkedin.com/in/karthikeya-ravirala-04332a264/"><button>Connect</button></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Tickets">
+    <h1>Tickets</h1>
+    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+     
+      <div class="responsive child">
+        <div class="round-image">
+          <img src="./images/child.jpg" alt="child" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Pitching</h2>
+          <p>
+            come pitch your ideas to a panel of CEOs and VCs, impress them, and get your initial funding and mentorship.
+          </p>
+          <a href="https://forms.gle/61DSUGgjQkdX3zv98">
+            Applay now
+          </a>
+        </div>
+      </div>
+      <div class="responsive special">
+        <div class="round-image">
+          <img src="images/AI3.jpg" alt="special" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Genral Admission </h2>
+          <p>
+              come and connect with like-minded people across various domains and witness The Founder's Challange Live</p>
+          <a href="https://lu.ma/Thefounderschallange" target="_blank">
+            Get Tickets
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+ 
+
+  <!-- footer start -->
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+
+      <div class="col">
+          <div class="footercontent">
+          <img src="/images/logo.png" style=size:"10px" alt="Anurag GPT Logo" class="footerlogo" />
+
+        </div>
+      </div>
+
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Anurag University , Venkatapur, Ghatkesar, Medchal–Malkajgiri district, Hyderabad, Telangana, India. 500 08</p>
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About The Event</a></li>
+<!--            <li>-->
+<!--              <a href="">Donate</a>-->
+<!--            </li>-->
+          </ul>
+        </div>
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            Tickets
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="https://forms.gle/61DSUGgjQkdX3zv98">Idea PitchingT</a>
+            </li>
+            <li>
+              <a href="https://lu.ma/Thefounderschallange">Genral Admission</a>
+            </li>
+           
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+        <h3>CONTACT</h3>
+        <ul>
+          <li><a href="#about">Tanish :- +91 79812 28844</a></li>
+          <li><a href="#about">Pradeep :- +91 9908293531</a></li>
+<!--            <li>-->
+<!--              <a href="">Donate</a>-->
+<!--            </li>-->
+        </ul>
+        <ul>
+          <li>
+            
+          </li>
+        </ul>
+      </div>
+       
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then((reg) => console.log('Success', reg.scope))
+          .catch((err) => console.log('Error', err))
+      })
+    }
+  </script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
